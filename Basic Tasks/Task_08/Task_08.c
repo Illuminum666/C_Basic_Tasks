@@ -7,6 +7,7 @@ int main() {
     short num, i, j, amp, per;
     char again='Y';
     do {
+        system("cls");
         printf("Enter the number of rows [1-9]:\t");
         scanf("%hd", &num);
         printf("Enter amplitude [integer]:\t");
