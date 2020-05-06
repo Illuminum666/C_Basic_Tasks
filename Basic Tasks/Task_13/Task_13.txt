@@ -1,0 +1,9 @@
+1. random seed is a number to initialize and indicate the starting point of the PRNG,
+affecting all the outputs of the PRNG. this is why using the same seed would lead to
+generating the same order of numbers
+
+2. firstly, it is not exactly fair. for example if RAND_MAX is 10 and % 3 is used, the
+probabilty for each number would not exactly be equally 1/3 but different (= 0 has 4).
+And if % x where x > RAND_MAX, some numbers would be omitted
+
+3. The value of N in 'rand() % N'
